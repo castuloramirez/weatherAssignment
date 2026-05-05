@@ -1,0 +1,14 @@
+com\example\weather\WeatherApplication.class
+com\example\weather\client\OpenWeatherResponse$WeatherCondition.class
+com\example\weather\config\CacheConfig.class
+com\example\weather\exception\CityNotFoundException.class
+com\example\weather\service\WeatherService.class
+com\example\weather\client\OpenWeatherResponse$Main.class
+com\example\weather\model\WeatherResponse.class
+com\example\weather\client\OpenWeatherClient.class
+com\example\weather\client\OpenWeatherResponse.class
+com\example\weather\config\AppConfig.class
+com\example\weather\controller\WeatherController.class
+com\example\weather\exception\GlobalExceptionHandler.class
+com\example\weather\client\OpenWeatherResponse$Wind.class
+com\example\weather\exception\WeatherServiceException.class

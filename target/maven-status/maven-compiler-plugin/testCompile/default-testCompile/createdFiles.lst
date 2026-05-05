@@ -1,0 +1,3 @@
+com\example\weather\client\OpenWeatherClientTest.class
+com\example\weather\controller\WeatherControllerTest.class
+com\example\weather\service\WeatherServiceTest.class
