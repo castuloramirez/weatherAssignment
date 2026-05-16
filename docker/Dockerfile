@@ -37,4 +37,4 @@ USER spring
 
 EXPOSE 7070
 
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java", "-Dserver.port=7070", "-jar", "app.jar"]
