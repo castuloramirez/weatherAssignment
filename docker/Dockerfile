@@ -31,6 +31,8 @@ RUN useradd -r -s /bin/false spring
 
 COPY --from=builder /app/target/*.jar app.jar
 
+ENV OPENWEATHER_API_KEY=""
+
 USER spring
 
 EXPOSE 7070
