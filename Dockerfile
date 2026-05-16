@@ -1,14 +1,17 @@
 # =========================
 # Stage 1 - Build
 # =========================
-FROM maven:3.9.9-eclipse-temurin-25 AS builder
+FROM eclipse-temurin:25-jdk AS builder
+
+
+RUN apt-get update && \
+    apt-get install -y maven && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
 # Copy Maven wrapper and pom first (better cache usage)
 COPY pom.xml .
-COPY .mvn .mvn
-COPY mvnw .
 
 # Download dependencies first
 RUN mvn dependency:go-offline -B
