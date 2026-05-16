@@ -128,3 +128,20 @@ Mocks `RestTemplate`. Verifies:
 | Validation | Jakarta Bean Validation + programmatic regex |
 | Error responses | Plain-text bodies via `GlobalExceptionHandler` |
 | Java | 25 (records for immutable DTOs) |
+
+
+## Docker
+
+### Build the image
+docker build -t weather-api .
+
+### Run — supply your real API key at runtime, never hardcode it
+docker run -p 7070:7070 \
+-e OPENWEATHER_API_KEY=your_real_key_here \
+weather-api
+
+### Test it
+curl "http://localhost:7070/api/v1/weather?city=London"
+
+### Swagger UI
+open http://localhost:7070/swagger-ui.html
